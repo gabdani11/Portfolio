@@ -33,7 +33,7 @@ return (
             
             {/* Left side */}
             <div className="flex gap-20">
-                <a href="#experience">
+                <a href="experience">
                 <li className='cursor-pointer hover:-translate-y-1 transition-all duration-300'>
   Experience
 </li></a>

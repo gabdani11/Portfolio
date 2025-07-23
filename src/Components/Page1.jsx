@@ -9,7 +9,7 @@ import Social from './Social'
 const Page1 = () => {
   return (
     <div className='flex w-full h-[90vh]'>
-        <div className='w-[10%] flex items-center relative'>
+        <div className='w-[10%] items-center  hidden md:flex relative'>
             <div className='ml-[-20px] mb-[18rem]'>
                 <Social/>
             </div>
@@ -18,13 +18,13 @@ const Page1 = () => {
 
 
 
-        <div className='w-[80%] flex flex-col justify-center items-center'>
+        <div className='w-[100%] md:w-[80%] flex flex-col justify-center items-center'>
             {/* Mobile*/}
 
-            <div className='text-[#f9f9f9] mb-[7rem] leading-[0.9] md:hidden'>
+            <div className='text-[#f9f9f9] mb-[7rem] md:hidden'>
             <h1 className='font-inria font-light italic text-[36px] mb-[-8px]'>Hey!I'm Daniel</h1>
-            <h2 className='font-inria text-[50px] leading-[1.1] '>Web Designer <br/>
-                & Devel<span className='relative ml-[40px]'><img className='absolute translate-x-[170px] h-[35px] translate-y-[-40px]' src={star} alt="star"/>per</span></h2>
+            <h2 className='font-inria text-[62px] leading-[0.9] relative '>Web Designer <br/>
+                & Devel<span className='relative ml-[40px]'><img className='absolute translate-x-[211px] h-[35px] translate-y-[-35px]' src={star} alt="star"/>per</span></h2>
                 </div>
             {/* Desktop*/}
             <div className='text-[#f9f9f9] mb-[7rem] md:block hidden'>
@@ -33,18 +33,43 @@ const Page1 = () => {
                 & Devel<span className='relative ml-[57px]'><img className=' md:translate-x-[333px] md:h-[55px] absolute translate-y-[-70px] lg:translate-x-[430px] lg:h-[60px]' src={star} alt="star"/>per</span></h2>
                 </div>
                 
-                <div>
+                {/* Smaller device */}
+                <div className='social-arrow-container flex md:hidden justify-between w-full h-[20%] '>
+                    {/* Social */}
+                    <div className='social md:hidden'>
+                        <Social/>
+                    </div>
 
-                    
+                    {/* Dot */}
+                    <div className='items-end h-full flex '>
                     <div className='border-2 cursor-pointer h-[60px] w-[27px] rounded-[60px] flex justify-center'>
                         <img className='h-3 float-dot'src={dot} alt="" />
                     </div>
+                    </div>
+
+                    {/* Arrow */}
+                    <div className='w-[10%] md:hidden items-end justify-end ml-[35px]'>
+                    <div className='flex relative flex-col gap-[10px] mr-[5px] mb-[40px]'>
+                    <img className='h-[40px]'src={vector1} alt="" />
+                    <img className='h-[300px]'src={vector2} alt="" />
+                    </div>
+                    </div>
+
                 </div>
+
+                <div>
+
+                <div className=' hidden md:flex border-2 cursor-pointer h-[60px] w-[27px] rounded-[60px] justify-center'>
+                        <img className='h-3 float-dot'src={dot} alt="" />
+                    </div>
+                    </div>
+
+
         </div>
 
 
-
-        <div className='w-[10%] flex items-end justify-end'>
+        {/* right Column - arrow vector*/}
+        <div className='w-[10%] hidden md:flex items-end justify-end'>
             <div className='flex flex-col gap-[10px] mr-[5px] mb-[40px]'>
             <img className='h-[43px]'src={vector1} alt="" />
             <img src={vector2} alt="" />
