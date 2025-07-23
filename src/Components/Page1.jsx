@@ -21,16 +21,16 @@ const Page1 = () => {
         <div className='w-[80%] flex flex-col justify-center items-center'>
             {/* Mobile*/}
 
-            <div className='text-[#f9f9f9] mb-[7rem] lg:hidden'>
-            <h1 className='font-inria font-light italic text-[36px] leading-[1] mb-[-8px]'>Hey!I'm Daniel</h1>
-            <h2 className='font-inria text-[62px] leading-[0.9]'>Web Designer <br/>
-                & Devel<span className='relative ml-[57px]'><img className='absolute' src={star} alt="star"/>per</span></h2>
+            <div className='text-[#f9f9f9] mb-[7rem] leading-[0.9] md:hidden'>
+            <h1 className='font-inria font-light italic text-[36px] mb-[-8px]'>Hey!I'm Daniel</h1>
+            <h2 className='font-inria text-[50px] leading-[1.1] '>Web Designer <br/>
+                & Devel<span className='relative ml-[40px]'><img className='absolute translate-x-[170px] h-[35px] translate-y-[-40px]' src={star} alt="star"/>per</span></h2>
                 </div>
             {/* Desktop*/}
-            <div className='text-[#f9f9f9] mb-[7rem] lg:block hidden'>
+            <div className='text-[#f9f9f9] mb-[7rem] md:block hidden'>
             <h1 className='font-inria font-light italic text-[48px] leading-[1] mb-[-8px]'>Hey!I'm Daniel</h1>
-            <h2 className='font-inria text-[128px] leading-[0.9]'>Web Designer <br/>
-                & Devel<span className='relative ml-[57px]'><img className='absolute translate-y-[-70px] translate-x-[430px]' src={star} alt="star"/>per</span></h2>
+            <h2 className='font-inria lg:text-[128px] leading-[0.9] md:text-[100px]'>Web Designer <br/>
+                & Devel<span className='relative ml-[57px]'><img className=' md:translate-x-[333px] md:h-[55px] absolute translate-y-[-70px] lg:translate-x-[430px] lg:h-[60px]' src={star} alt="star"/>per</span></h2>
                 </div>
                 
                 <div>
