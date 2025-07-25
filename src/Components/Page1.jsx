@@ -40,14 +40,14 @@ const Page1 = () => {
                         <Social/>
                     </div>
 
-                    {/* Dot */}
-                    <div className='items-end h-full flex '>
+                    {/* Dot for mobile*/}
+                    <div className='items-center h-full flex '>
                     <div className='border-2 cursor-pointer h-[60px] w-[27px] rounded-[60px] flex justify-center'>
                         <img className='h-3 float-dot'src={dot} alt="" />
                     </div>
                     </div>
 
-                    {/* Arrow */}
+                    {/* Arrow for mobile*/}
                     <div className='w-[10%] md:hidden items-end justify-end ml-[35px]'>
                     <div className='flex relative flex-col gap-[10px] mr-[5px] mb-[40px]'>
                     <img className='h-[40px]'src={vector1} alt="" />
@@ -58,6 +58,7 @@ const Page1 = () => {
                 </div>
 
                 <div>
+                {/* Dot for Desktop*/}
 
                 <div className=' hidden md:flex border-2 cursor-pointer h-[60px] w-[27px] rounded-[60px] justify-center'>
                         <img className='h-3 float-dot'src={dot} alt="" />
@@ -68,7 +69,7 @@ const Page1 = () => {
         </div>
 
 
-        {/* right Column - arrow vector*/}
+        {/* right Column - arrow vector for desktop*/}
         <div className='w-[10%] hidden md:flex items-end justify-end'>
             <div className='flex flex-col gap-[10px] mr-[5px] mb-[40px]'>
             <img className='h-[43px]'src={vector1} alt="" />

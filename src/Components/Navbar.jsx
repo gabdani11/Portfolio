@@ -8,8 +8,9 @@ return (
 
    
 
-    <div>
-        <div className='responsive relative'>
+    <div className='maindiv'>
+        {/* Mobile */}
+        <div className='responsive-mobile relative'>
 
     <div className='mobile lg:hidden flex items-center justify-between'>
         <img className='h-[70px] mt-2'src="/LOGO1.png"alt="logo"/>
@@ -28,6 +29,7 @@ return (
 
     </div>
     </div>
+    {/* Desktop*/}
     <div className="navbar hidden lg:block text-[#f9f9f9] text-[24px] font-inria w-full">
         <ul className="flex items-center justify-between w-full ">
             
@@ -35,8 +37,8 @@ return (
             <div className="flex gap-20">
                 <a href="experience">
                 <li className='cursor-pointer hover:-translate-y-1 transition-all duration-300'>
-  Experience
-</li></a>
+                    Experience
+      </li></a>
 <a href="#project">
                 <li className='cursor-pointer hover:-translate-y-1 transition-all duration-300'>Project</li></a>
             </div>
