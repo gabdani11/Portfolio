@@ -32,8 +32,8 @@ const App = () => {
               </div>
               
               <div className="space-y-2 text-white/70">
-                <p className="text-lg font-inria">Daniel | UI/UX Designer & Web Developer.</p>
-                <p className="text-lg font-inria">Trusted by clients. Powered by passion.</p>
+                <p className="text-sm md:text-lg font-inria">Daniel | UI/UX Designer & Web Developer.</p>
+                <p className="text-sm md:text-lg font-inria">Trusted by clients. Powered by passion.</p>
               </div>
             </div>
 

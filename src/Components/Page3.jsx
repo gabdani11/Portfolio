@@ -8,16 +8,21 @@ const Page3 = () => {
     <div>
       {/* Mobile*/}
       <div id='experience-mobile' className='md:hidden'>
-      <h1 className='font-inria text-[#f9f9f9] text-[62px]'>Experience</h1>
-      <h3 className="text-xl font-inria mb-4 text-white/90">
+        <div className='flex flex-col relative py-10'>
+      <h1 className='z-10 font-inria text-[#f9f9f9] text-[62px]'>Experience</h1>
+      <h3 className="z-10 text-xl font-inria mb-4 text-white/90">
                     Freelance Designer & Developer (2020-Present)
                   </h3>
-      <p className="text-white/80 text-base leading-relaxed font-thin font-inria">
+      <p className="z-10 text-white/80 text-base leading-relaxed font-thin font-inria">
                     Started with graphic design in 2020, then moved into web 
                     design and UI/UX. I focus on creating clean, user-friendly 
                     digital experiences and also build the front-end to bring 
                     them to life.
                   </p>
+                  <div className='bg-[#677EC2]/30 h-[306px] w-[251px] absolute right-0'></div>
+                  </div>
+                  <div className='flex flex-col gap-12'>
+                    <div>
                   <h2 className='font-inria text-[#f9f9f9] text-[30px]'>Coding skills</h2>
                   <div className='front-inrai text-white/80 text-lg grid grid-cols-2 gap-x-10 gap-y-5'>
                     <div>-HTML</div>
@@ -27,24 +32,28 @@ const Page3 = () => {
                     <div>-PHP</div>
                 
                   </div>
+                  </div>
+                  <div className='mb-12'>
                   <h2 className='font-inria text-[#f9f9f9] text-[30px]'>Education</h2>
                   <p className='font-inria text-white/80 text-[18px]'>Bachelor of Computer Applications 2022-2025   </p>
-                  <div className='flex justify-center text-[#353A5F] p-5'>
+                  <div className='flex justify-center text-[#353A5F] pt-10'>
                   <div className='flex gap-10 rounded-full'>
                     <div className='bg-white shadow-xl shadow-white/50 backdrop-blur-xl py-5 px-10 rounded-full'>UI/UX</div>
                     <div className='bg-white shadow-xl shadow-white/50 backdrop-blur-xl py-5 px-4 rounded-full'>Web Developer</div>
 
                   </div>
                   </div>
+                  </div>
+                  </div>
 
  
     </div>
-    <div className='md:hidden'>
+    <div className='md:hidden flex flex-col gap-10'>
       <h1 className='font-inria text-[#f9f9f9] text-[36px] text-center'>
         Tools & Technology
       </h1>
       <div className='border border-white/20 bg-white/10 shadow-lg 
-      backdrop-filter backdrop-blur-md rou p-2 grid grid-cols-4 gap-8'>
+      backdrop-filter backdrop-blur-md rou p-5 grid grid-cols-4 gap-8'>
         {/* Figma Icon */}
          <div className='figma-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
               <div className="flex flex-col items-center">
