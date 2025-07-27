@@ -14,7 +14,7 @@ return (
         <div className='responsive-mobile relative'>
 
     <div className='mobile lg:hidden flex items-center justify-between'>
-        <img className='h-[70px] mt-2' src="/LOGO1.png" alt="logo"/>
+        <img className='h-[70px] mt-2' src="LOGO1.png" alt="logo"/>
         
         <div className='cursor-pointer'>    
             <Menu onClick={() => setIsOpen(!isOpen)}/>
@@ -48,7 +48,7 @@ return (
             <div>
                 <img
                 className='h-[70px] mt-2'
-                    src="/LOGO1.png"
+                    src="LOGO1.png"
                     alt="logo"
             
                 />
