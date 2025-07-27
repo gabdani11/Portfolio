@@ -9,12 +9,13 @@ const Page4 = () => {
   );
 
   return (
+    
     <div id='project' className="min-h-screen text-white">
       {/* Projects Section */}
       <div className="px-8 py-16">
         <div className="max-w-6xl mx-auto">
           {/* Projects Title */}
-          <h1 className="text-7xl font-inria italic text-center mb-20 text-[#f9f9f9]">Projects</h1>
+          <h1 className="text-[60px] font-inria italic text-center mb-20 text-[#f9f9f9]">Projects</h1>
           
           {/* Projects List */}
           <div className="space-y-12">
@@ -48,7 +49,7 @@ const Page4 = () => {
             <div className="flex items-start justify-between border-b border-white/20 pb-8">
               <div className="flex-1">
                 <h2 className="text-3xl font-inria italic mb-4 text-white/90">Lorem ipsum</h2>
-                <p className="text-white/70 font-inriatext-lg leading-relaxed max-w-4xl">
+                <p className="text-white/70 font-inria text-lg leading-relaxed max-w-4xl">
                   Lorem ipsum lacus sed risus maecenas potenti est sed ac turpis ultricies at vitae eras nullam est vitae.
                 </p>
               </div>

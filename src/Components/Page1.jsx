@@ -36,7 +36,7 @@ const Page1 = () => {
                 {/* Smaller device */}
                 <div className='social-arrow-container flex md:hidden justify-between w-full h-[20%] '>
                     {/* Social */}
-                    <div className='social md:hidden'>
+                    <div className='social md:hidden mt-[-11px]'>
                         <Social/>
                     </div>
 
