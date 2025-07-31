@@ -5,6 +5,7 @@ import star from '../assets/game-icons_star-cycle.svg'
 import dot from '../assets/dot.svg'
 import '../App.css'
 import Social from './Social'
+import {gsap} from 'gsap'
 
 const Page1 = () => {
   return (
