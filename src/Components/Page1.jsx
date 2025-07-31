@@ -43,7 +43,7 @@ const Page1 = () => {
                     {/* Dot for mobile*/}
                     <div className='items-center h-full flex '>
                     <div className='border-2 cursor-pointer h-[60px] w-[27px] rounded-[60px] flex justify-center'>
-                        <img className='h-3 float-dot'src={dot} alt="" />
+                        <a href="#about"><img className='h-3 float-dot'src={dot} alt="" /></a>
                     </div>
                     </div>
 
@@ -61,7 +61,7 @@ const Page1 = () => {
                 {/* Dot for Desktop*/}
 
                 <div className=' hidden md:flex border-2 cursor-pointer h-[60px] w-[27px] rounded-[60px] justify-center'>
-                        <img className='h-3 float-dot'src={dot} alt="" />
+                        <a href="#about"><img className='h-3 float-dot'src={dot} alt="" /></a>
                     </div>
                     </div>
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import Menu from './Menu.jsx'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
