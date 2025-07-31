@@ -6,8 +6,67 @@ import dot from '../assets/dot.svg'
 import '../App.css'
 import Social from './Social'
 import {gsap} from 'gsap'
+import {useRef} from 'react'
+import {useEffect} from 'react'
+import {ScrollTrigger} from 'gsap/ScrollTrigger'; 
 
 const Page1 = () => {
+    const heading = useRef(null);
+    const subheading = useRef(null);
+    const headingcomplete = useRef(null);
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    useEffect(() => {
+
+        gsap.fromTo(heading.current,{
+            opacity:0,
+            x:-200,
+        },
+        {
+            opacity:1,
+            x:0,
+            duration:2,
+            ease:"power2.out"
+
+        })
+
+          gsap.fromTo(subheading.current,{
+            opacity:0,
+            y:-100,},
+        {
+            opacity:1,
+            y:0,
+            duration:2,
+            ease:"power2.out"
+
+        })
+
+        gsap.fromTo(".heading",{
+            
+            x:0,
+        },
+        {
+            opacity:0,
+            x:200,
+            duration:2,
+            scrollTrigger:{
+                trigger:".heading",
+                start:"top 20%",
+                end:"bottom 20%",
+                scrub:1,
+                markers:true,
+            }
+
+        })
+
+    },[]);
+
+
+
+
+
+
   return (
     <div className='flex w-full h-[90vh]'>
         <div className='w-[10%] items-center  hidden md:flex relative'>
@@ -22,15 +81,15 @@ const Page1 = () => {
         <div className='w-[100%] md:w-[80%] flex flex-col justify-center items-center'>
             {/* Mobile*/}
 
-            <div className='text-[#f9f9f9] mb-[7rem] md:hidden'>
+            <div className='heading text-[#f9f9f9] mb-[7rem] md:hidden'>
             <h1 className='font-inria font-light italic text-[36px] mb-[-8px]'>Hey!I'm Daniel</h1>
             <h2 className='font-inria text-[62px] leading-[0.9] relative '>Web Designer <br/>
                 & Devel<span className='relative ml-[40px]'><img className='absolute translate-x-[211px] h-[35px] translate-y-[-35px]' src={star} alt="star"/>per</span></h2>
                 </div>
             {/* Desktop*/}
-            <div className='text-[#f9f9f9] mb-[7rem] md:block hidden'>
-            <h1 className='font-inria font-light italic text-[48px] leading-[1] mb-[-8px]'>Hey!I'm Daniel</h1>
-            <h2 className='font-inria lg:text-[128px] leading-[0.9] md:text-[100px]'>Web Designer <br/>
+            <div className='heading text-[#f9f9f9] mb-[7rem] md:block hidden'>
+            <h1 ref={subheading} className='font-inria font-light italic text-[48px] leading-[1] mb-[-8px]'>Hey!I'm Daniel</h1>
+            <h2 ref={heading}className='font-inria lg:text-[128px] leading-[0.9] md:text-[100px]'>Web Designer <br/>
                 & Devel<span className='relative ml-[57px]'><img className=' md:translate-x-[333px] md:h-[55px] absolute translate-y-[-70px] lg:translate-x-[430px] lg:h-[60px]' src={star} alt="star"/>per</span></h2>
                 </div>
                 
