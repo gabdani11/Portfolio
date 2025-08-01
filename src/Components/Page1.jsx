@@ -49,13 +49,14 @@ const Page1 = () => {
         {
             opacity:0,
             x:200,
-            duration:2,
+            duration:10,
             scrollTrigger:{
                 trigger:".heading",
-                start:"top 20%",
-                end:"bottom 20%",
+                start:"top 5%",
+                end:"bottom 1%",
                 scrub:1,
-                markers:true,
+                
+                
             }
 
         })
@@ -72,7 +73,7 @@ const Page1 = () => {
         <div className='w-[10%] items-center  hidden md:flex relative'>
             <div className='ml-[-20px] mb-[18rem]'>
                 <Social/>
-            </div>
+            </div>c
 
         </div>
 
