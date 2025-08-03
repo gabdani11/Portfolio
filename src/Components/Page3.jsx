@@ -5,7 +5,7 @@ import git from '../assets/git-icon.svg'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import { useEffect } from 'react';
-import { use } from 'react';
+
 
 const Page3 = () => {
 
