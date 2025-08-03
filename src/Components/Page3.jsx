@@ -2,8 +2,55 @@ import React from 'react';
 import figma from '../assets/Figma-logo.svg'
 import react from '../assets/react-svgrepo-com.svg'
 import git from '../assets/git-icon.svg'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import { useEffect } from 'react';
+import { use } from 'react';
 
 const Page3 = () => {
+
+  gsap.registerPlugin(ScrollTrigger);
+  useEffect(() => {
+    gsap.fromTo(".bluesheet",
+      {
+        opacity: 0,
+        height: 0,
+      },
+      {
+        opacity: 1,
+        height:"30rem",
+        duration: 20,
+        ease: "sine.out",
+        scrollTrigger: {
+          trigger: ".bluesheet",
+          start: "top 80%",
+          end: "center 30%",
+          scrub: 2,
+          
+        }
+      }
+    )
+
+    gsap.fromTo(".box",
+      {
+        opacity: 0,
+        height: 0,
+      },
+      {
+        opacity: 1,
+        height:"306px",
+        duration: 20,
+        ease: "sine.out",
+        scrollTrigger: {
+          trigger: ".box",
+          start: "top 80%",
+          end: "center 30%",
+          scrub: 2,
+          
+        }
+      }
+    )
+  }, []);
   return (
     <div>
       {/* Mobile*/}
@@ -19,7 +66,7 @@ const Page3 = () => {
                     digital experiences and also build the front-end to bring 
                     them to life.
                   </p>
-                  <div className='bg-[#677EC2]/30 h-[306px] w-[251px] absolute right-0'></div>
+                  <div className='box bg-[#677EC2]/30 h-[306px] w-[251px] absolute right-0'></div>
                   </div>
                   <div className='flex flex-col gap-12'>
                     <div>
@@ -116,31 +163,27 @@ const Page3 = () => {
 
     </div>
       {/* Desktop  */}
-    <div className=" hidden md:block min-h-scree backdrop-blur-md bg-white/10 rounded-xl border border-white/20 text-white p-8">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-3 gap-24 h-screen">
-          
-          {/* Left Column - Tools & Technology */}
-          <div className='flex flex-col h-[50rem] w-[25rem] items-start justify-center gap-24'>
-            <h1 className='font-inria italic text-[#f9f9f9] text-[36px]'>Tools&Technology</h1>
-          
-          <div className='grid grid-cols-2 gap-16'>
-            {/*Figma */}
+    <div className='desktop-experience hidden md:flex justify-between mb-40'>
+      {/*Left-section*/}
+      <div className='left-section flex flex-col justify-center gap-[25px] ml-[150px]'>
+        <h1 className='font-inria font-light text-[36px] text-white '>Tools&Techology</h1>
+        <div className='icons grid grid-cols-2 gap-x-4 gap-y-7 '>
+          {/*Figma */}
             <div className='figma-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
-              <div className="flex flex-col items-center">
+              <div>
                   <img className='h-[70px]' src={figma} alt="" />
                 </div>
             </div>
             {/*React */}
             <div className='react-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
-                <div className="flex flex-col items-center ">
+                <div>
                   <img className='h-[70px]'src={react} alt="" />
                 </div>
             </div>
             {/*Tailwind Icon */}
             <div className='tailwind-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
 
-                   <div className="w-[70px] h-[70px] flex items-center justify-center">
+                   <div>
                     <svg className="w-[70px] h-[70px] text-teal-400" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"/>
                     </svg>
@@ -148,18 +191,20 @@ const Page3 = () => {
 
             </div>
             {/*P5-icon */}
-            <div className='P5-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
-              <div className="flex items-center justify-center">
+            <div className='P5-icon hover:scale-105 transition-transform duration-400 ease-in-out flex items-center'>
+              <div>
                     <span className="text-pink-400 font-mono text-3xl font-bold">p5.js</span>
                   </div>
             </div>
-            {/*Git-icon */}
+        
+        {/*Git-icon */}
             <div className='Git-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
-              <div className="w-16 h-16 flex items-center justify-center">
-                    <img className='h-[70px]' src={git} alt="" />
+              <div>
+                    <img className='h-[65px]' src={git} alt="" />
                   </div>
             </div>
             {/*Threejs-icon */}
+            
             <div className='Three-js-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
               <div className="w-[70px] h-[70px] flex items-center justify-center">
                     <svg fill="none" stroke-linecap="square" stroke-miterlimit="10" version="1.1" viewBox="0 0 226.77 226.77" xmlns="http://www.w3.org/2000/svg">
@@ -174,81 +219,54 @@ const Page3 = () => {
 </svg>
                   </div>
             </div>
+            
+
             {/*GSAP-icon */}
             <div className='GSAP-icon hover:scale-105 transition-transform duration-400 ease-in-out'>
               <div className="text-white text-3xl font-bold tracking-wider">
                   GSAP
                 </div>
             </div>
-        
-          </div>
-          </div>
-          
-
-          {/* Middle Column - Coding Skills & Education */}
-          <div className="flex flex-col justify-center border-l border-r border-white/20 px-8">
-            <div className="mb-16">
-              <h2 className="text-3xl font-inria mb-12 text-[#f9f9f9]">Coding skills</h2>
-              
-              <div className="grid grid-cols-2 gap-6 text-lg text-white/80">
-                <div>HTML</div>
-                <div>SQL</div>
-                <div>CSS</div>
-                <div>PHP</div>
-
-
-                <div>JavaScript</div>
-                <div></div>
-              </div>
-            </div>
-
-            <div>
-              <h2 className="text-3xl font-inria mb-12 text-[#f9f9f9]">Education</h2>
-              
-              <div className="space-y-3 text-white/80 mb-16">
-                <div className="text-lg">Bachelor of Computer Applications</div>
-                <div className="text-base">2022-2025</div>
-              </div>
-
-              <div className="flex space-x-4">
-
-
-
-
-
-                <div className="shadow-[inset_6px_6px_7px_#bebebe,_inset_-6px_-6px_7px_#ffffff] hover:outline-none hover:shadow-[inset_2px_2px_4px_#bebebe,_inset_-2px_-2px_4px_#ffffff] transition-shadow duration-300 bg-[#e0e5ec] px-6 py-3 rounded-xl text-sm text-gray-700">
-                  UI/UX Design
-                </div>
-                <div className="shadow-[inset_6px_6px_7px_#bebebe,_inset_-6px_-6px_7px_#ffffff] hover:outline-none hover:shadow-[inset_2px_2px_4px_#bebebe,_inset_-2px_-2px_4px_#ffffff] transition-shadow duration-300 bg-[#e0e5ec] px-6 py-3 rounded-xl text-sm text-gray-700">
-                  Web Developer
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Column - Experience */}
-          <div id="experience"className="flex flex-col justify-center">
-            <h1 className="text-6xl font-inria mb-16 text-[#f9f9f9]">Exper<span className='italic'>i</span>ence</h1>
-            
-            <div className="">
-              <div className="flex items-start space-x-4">
-                
-                <div>
-                  <h3 className="text-xl font-inria mb-4 text-white/90">
-                    Freelance Designer & Developer (2020-Present)
-                  </h3>
-                  <p className="text-white/80 text-base leading-relaxed font-thin font-inria">
-                    Started with graphic design in 2020, then moved into web 
-                    design and UI/UX. I focus on creating clean, user-friendly 
-                    digital experiences and also build the front-end to bring 
-                    them to life.
-                  </p>
-                </div>
-              </div>
-            </div>
+      </div>
+      </div>
+      {/*Middel-section*/}
+      <div className='middle-section flex flex-col gap-[68px] border-l border-white p-[100px]'>
+        <div>
+          <h1 className='font-inria text-white font-light text-[36px] '>Codingskills</h1>
+          <div className='text-white/80 font-light text-[18px] grid grid-cols-2 gap-x-11 gap-y-5'>
+          <div>- HTML</div>
+          <div>- CSS</div>
+          <div>- JAVASCRIPT</div>
+          <div>- SQL</div>
+          <div>- PHP</div>
           </div>
         </div>
+        
+        <div className='flex flex-col gap-[66px]'>
+          <div>
+          <h1 className='font-inria text-[36px] font-light text-white'>Education</h1>
+          <p className='text-white/80 font-inria font-light text-[18px]'>Bachelor of Computer Applications<br/>2022-2025</p>
+          </div>
+          <div className='flex gap-[40px] text-white font-inria'>
+            <div className='p-4 px-9 rounded-[50px] shadow-[inset_2px_2px_2px_#ffffff,_inset_-2px_-2px_2px_#ffffff] backdrop-blur-sm bg-white/5'>UI/UX</div>
+            <div className='p-4 rounded-[50px] shadow-[inset_2px_2px_2px_#ffffff,_inset_-2px_-2px_2px_#ffffff] backdrop-blur-sm bg-white/5'>Web Developer</div>
+          </div>
+
+        </div>
+
       </div>
+      {/*right-section*/}
+      <div className='right-section flex flex-col gap-16 relative w-[35%] '>
+        <div className='z-10 p-5'>
+        <h1 id='experience' className='font-inria text-white text-[96px] font-bold'>Exper<span className='italic'>i</span>ence</h1>
+        <div className='text-white/90 font-sans flex flex-col gap-4'>
+          <p className='text-[20px]'>Freelance Designer & Developer (2020 – Present)</p>
+          <p className='text-[18px]'>Started with graphic design in 2020, then moved into web design and UI/UX. I focus on creating clean, user-friendly digital experiences and also build the front end to bring them to life.</p>
+        </div>
+        </div>
+        <div className='bluesheet bg-[#353A5F] h-[30rem] w-full absolute top-0'></div>
+      </div>
+
     </div>
     </div>
   );

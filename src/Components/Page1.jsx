@@ -69,7 +69,7 @@ const Page1 = () => {
 
 
   return (
-    <div className='flex w-full h-[90vh]'>
+    <div className='flex w-full h-[90vh] '>
         <div className='w-[10%] items-center  hidden md:flex relative'>
             <div className='ml-[-20px] mb-[18rem]'>
                 <Social/>
@@ -88,7 +88,7 @@ const Page1 = () => {
                 & Devel<span className='relative ml-[40px]'><img className='absolute translate-x-[211px] h-[35px] translate-y-[-35px]' src={star} alt="star"/>per</span></h2>
                 </div>
             {/* Desktop*/}
-            <div className='heading text-[#f9f9f9] mb-[7rem] md:block hidden'>
+            <div className='heading text-[#f0f4f5] mb-[7rem] md:block hidden'>
             <h1 ref={subheading} className='font-inria font-light italic text-[48px] leading-[1] mb-[-8px]'>Hey!I'm Daniel</h1>
             <h2 ref={heading}className='font-inria lg:text-[128px] leading-[0.9] md:text-[100px]'>Web Designer <br/>
                 & Devel<span className='relative ml-[57px]'><img className=' md:translate-x-[333px] md:h-[55px] absolute translate-y-[-70px] lg:translate-x-[430px] lg:h-[60px]' src={star} alt="star"/>per</span></h2>
