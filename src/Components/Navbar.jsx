@@ -62,7 +62,7 @@ return (
                 <li className='cursor-pointer hover:-translate-y-1 transition-all duration-300'>
                     <a href="#about">About</a>
                 </li>
-                <li className='cursor-pointer hover:-translate-y-1 transition-all duration-300'>
+                <li className='cursor-pointer hover:-translate-y-1 transition-all duration-300 bg-[#f9f9f9] text-[#353A5F] rounded-2xl px-3'>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>

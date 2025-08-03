@@ -50,6 +50,25 @@ const Page3 = () => {
         }
       }
     )
+
+    gsap.fromTo(".middle-section",
+  {
+    opacity: 0,
+    borderLeftColor: "rgba(249, 249, 249, 0)", // transparent
+  },
+  {
+    opacity: 1,
+    borderLeftColor: "#f9f9f9", // visible
+    duration: 2,
+    ease: "sine.out",
+    scrollTrigger: {
+      trigger: ".middle-section",
+      start: "top 80%",
+      end: "center 30%",
+      scrub: 2,
+    }
+  }
+);
   }, []);
   return (
     <div>
@@ -258,13 +277,15 @@ const Page3 = () => {
       {/*right-section*/}
       <div className='right-section flex flex-col gap-16 relative w-[35%] '>
         <div className='z-10 p-5'>
-        <h1 id='experience' className='font-inria text-white text-[96px] font-bold'>Exper<span className='italic'>i</span>ence</h1>
-        <div className='text-white/90 font-sans flex flex-col gap-4'>
+        <h1 id='experience' className='font-inria text-[#353A5F] text-[96px] font-bold'>Exper<span className='italic'>i</span>ence</h1>
+        <div className='text-[#353A5F] font-sans flex flex-col gap-4'>
           <p className='text-[20px]'>Freelance Designer & Developer (2020 – Present)</p>
           <p className='text-[18px]'>Started with graphic design in 2020, then moved into web design and UI/UX. I focus on creating clean, user-friendly digital experiences and also build the front end to bring them to life.</p>
         </div>
         </div>
-        <div className='bluesheet bg-[#353A5F] h-[30rem] w-full absolute top-0'></div>
+        <div className='bluesheet bg-[#f9f9f9] h-[30rem] w-full absolute top-0 text-[9rem] font-inria italic font-bold flex items-end justify-end text-gray-400/5'>
+          ecneirepxE
+        </div>
       </div>
 
     </div>
