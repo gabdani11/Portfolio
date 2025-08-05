@@ -35,9 +35,9 @@ const Page4 = () => {
             {/* Lorem ipsum Project 1 */}
             <div className="flex items-start justify-between border-b border-white/20 pb-8">
               <div className="flex-1">
-                <h2 className="text-3xl font-inria italic mb-4 text-white/90">Lorem ipsum</h2>
+                <h2 className="text-3xl font-inria italic mb-4 text-white/90">Motion Sense</h2>
                 <p className="text-white/70 font-inria text-lg leading-relaxed max-w-4xl">
-                  Lorem ipsum fermentum commodo sit nec sit aliquet arcu maecenas mattis amet nec duis massa pharetra adipiscing mauris est euismod.
+                  Motion Sense is an AI-based emotion detection system that analyzes human facial expressions to detect motion and identify emotional states in real-time. It combines motion sensing with AI to enhance interaction and monitoring applications.
                 </p>
               </div>
               <div className="ml-8 flex-shrink-0">
@@ -48,9 +48,11 @@ const Page4 = () => {
             {/* Lorem ipsum Project 2 */}
             <div className="flex items-start justify-between border-b border-white/20 pb-8">
               <div className="flex-1">
-                <h2 className="text-3xl font-inria italic mb-4 text-white/90">Lorem ipsum</h2>
+                <h2 className="text-3xl font-inria italic mb-4 text-white/90">AI Video Detection</h2>
                 <p className="text-white/70 font-inria text-lg leading-relaxed max-w-4xl">
-                  Lorem ipsum lacus sed risus maecenas potenti est sed ac turpis ultricies at vitae eras nullam est vitae.
+                  AI Video Detection is a system designed to identify whether a video is AI-generated or real. It uses machine learning models to analyze visual patterns, artifacts, and inconsistencies typical of deepfake or synthetic content.
+
+
                 </p>
               </div>
               <div className="ml-8 flex-shrink-0">
