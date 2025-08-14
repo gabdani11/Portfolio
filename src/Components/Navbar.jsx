@@ -14,7 +14,7 @@ return (
         <div className='responsive-mobile relative'>
 
     <div className='mobile lg:hidden flex items-center justify-between'>
-        <img className='h-[60px] mt-2' src="LOGO1.png" alt="logo"/>
+        <img className='h-[55px] mt-2' src="LOGO1.png" alt="logo"/>
         
         <div className='cursor-pointer'>    
             <Menu onClick={() => setIsOpen(!isOpen)}/>
@@ -29,7 +29,7 @@ return (
     </div>
     </div>
     {/* Desktop*/}
-    <div className="navbar hidden lg:block text-[#f9f9f9] text-[24px] font-inria w-full">
+    <div className="navbar hidden lg:block text-[#f9f9f9] text-[20px] font-inria w-full pt-2">
         <div className="flex items-center justify-between w-full ">
             
             {/* Left side */}
@@ -47,7 +47,7 @@ return (
             {/* Center image */}
             <div>
                 <img
-                className='h-[70px] mt-2'
+                className='h-[55px] mt-2'
                     src="LOGO1.png"
                     alt="logo"
             

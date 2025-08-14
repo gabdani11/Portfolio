@@ -114,7 +114,7 @@ const Page2 = () => {
 <div className='responsive h-[90%] w-[100%] md:hidden relative '>
         <div className='about-me pt-16 gap-14 flex flex-col w-[85%] z-10 relative'>
           <h1 className='font-inria text-[#f9f9f9] text-[62px] mb-7'>Ab<span className='relative ml-[57px]'><img className='absolute h-[55px] translate-y-[-75px] translate-x-[75px]' src={star} alt="star"/>ut</span> me</h1>
-          <p className='font-inria text-[18px] leading-[1.4] text-[#f9f9f9] pr-32'>Hi, I'm Daniel — a self-taught UI/UX designer and web developer passionate about crafting beautiful, user-friendly, and intuitive digital experiences. I specialize in designing and developing websites that not only look great but also deliver the best user interface and seamless user experience. My goal is to build clean, modern, and responsive websites that feel comfortable and enjoyable to use.</p>
+          <p className='font-inria text-[16px] leading-[1.4] text-[#f9f9f9] pr-32'>Hi, I'm Daniel — a self-taught UI/UX designer and web developer passionate about crafting beautiful, user-friendly, and intuitive digital experiences. I specialize in designing and developing websites that not only look great but also deliver the best user interface and seamless user experience. My goal is to build clean, modern, and responsive websites that feel comfortable and enjoyable to use.</p>
           
 
 
@@ -139,7 +139,7 @@ const Page2 = () => {
     <div className=' h-[55rem] w-full items-center justify-between overflow-hidden hidden md:flex'>
       <div className='about w-[50%] h-[70%]'>
         <h1 className='font-inria text-[#f9f9f9] text-[128px] mb-7'>Ab<span className='relative ml-[57px]'><img className='absolute translate-y-[-112px] translate-x-[150px]' src={star} alt="star"/>ut</span> me</h1>
-        <p className='font-inria text-[24px] leading-[1.4] text-[#f9f9f9]'>Hi, I'm Daniel — a self-taught UI/UX designer and web developer passionate about crafting beautiful, user-friendly, and intuitive digital experiences. I specialize in designing and developing websites that not only look great but also deliver the best user interface and seamless user experience. My goal is to build clean, modern, and responsive websites that feel comfortable and enjoyable to use.</p>
+        <p className='font-inria text-[18px] leading-[1.4] text-[#f9f9f9]'>Hi, I'm Daniel — a self-taught UI/UX designer and web developer passionate about crafting beautiful, user-friendly, and intuitive digital experiences. I specialize in designing and developing websites that not only look great but also deliver the best user interface and seamless user experience. My goal is to build clean, modern, and responsive websites that feel comfortable and enjoyable to use.</p>
         <div className='flex gap-44 pl-[19px]'>
           <img className='-rotate-90'src={vector1} alt="" />
           <img className='-rotate-90'src={vector2} alt="" />

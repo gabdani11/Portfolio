@@ -283,7 +283,7 @@ const Page3 = () => {
           <p className='text-[18px]'>Started with graphic design in 2020, then moved into web design and UI/UX. I focus on creating clean, user-friendly digital experiences and also build the front end to bring them to life.</p>
         </div>
         </div>
-        <div className='bluesheet bg-[#f9f9f9] h-[30rem] w-full absolute top-0 text-[9rem] font-inria italic font-bold flex items-end justify-end text-gray-400/5'>
+        <div className='bluesheet bg-[#f9f9f9] h-[30rem] w-full absolute top-0 text-[9rem] font-inria italic font-bold flex items-end justify-end text-gray-400/5 overflow-hidden'>
           ecneirepxE
         </div>
       </div>

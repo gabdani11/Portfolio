@@ -27,7 +27,7 @@ const App = () => {
             {/* Left Side - Niel Info */}
             <div className="space-y-6">
               <div className="relative">
-                <h2 className="text-5xl font-light text-white/90 mb-2"><img src="LOGO1.png" alt="" /></h2>
+                <img className='h-[55px]' src="LOGO1.png" alt="" />
                 
               </div>
               
@@ -38,8 +38,8 @@ const App = () => {
             </div>
 
             {/* Right Side - Contacts */}
-            <div className="text-right space-y-8">
-              <h2 className="text-6xl font-inria text-white/90">Contacts</h2>
+            <div className="text-right md:space-y-8 space-y-6 md:mt-0 mt-4 ">
+              <h2 className=" text-3xl md:text-6xl font-inria text-white/90">Contacts</h2>
               
               <div className="space-y-6">
                 {/* Email */}
@@ -50,7 +50,7 @@ const App = () => {
   rel="noopener noreferrer"
   className="flex items-center space-x-2 group"
 >
-  <span className="text-white/90 text-lg font-inria group-hover:underline">
+  <span className="text-white/90 text-base md:text-lg font-inria group-hover:underline">
     daniel.pprakash@gmail.com
   </span>
   <svg
