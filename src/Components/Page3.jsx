@@ -101,7 +101,7 @@ const Page3 = () => {
                   </div>
                   <div className='mb-12'>
                   <h2 className='font-inria text-[#f9f9f9] text-[30px]'>Education</h2>
-                  <p className='font-inria font-thin text-white/80 text-[18px]'>Bachelor of Computer Applications 2022-2025   </p>
+                  <p className='font-inria font-thin text-white/80 text-[18px]'>Bachelor of Computer Applications   </p>
                   <div className='flex justify-center text-[#353A5F] pt-10'>
                   <div className='flex gap-10 rounded-full'>
                     <div className='shadow-[inset_6px_6px_7px_#bebebe,_inset_-6px_-6px_7px_#ffffff] active:outline-none hover:shadow-[inset_2px_2px_4px_#bebebe,_inset_-2px_-2px_4px_#ffffff] transition-shadow duration-300 bg-[#e0e5ec] py-5 px-10 rounded-xl'>UI/UX</div>
@@ -264,7 +264,7 @@ const Page3 = () => {
         <div className='flex flex-col gap-[66px]'>
           <div>
           <h1 className='font-inria text-[36px] font-light text-white'>Education</h1>
-          <p className='text-white/80 font-inria font-light text-[18px]'>Bachelor of Computer Applications<br/>2022-2025</p>
+          <p className='text-white/80 font-inria font-light text-[18px]'>Bachelor of Computer Applications</p>
           </div>
           <div className='flex gap-[40px] text-white font-inria'>
             <div className='p-4 px-9 rounded-[50px] shadow-[inset_2px_2px_2px_#ffffff,_inset_-2px_-2px_2px_#ffffff] backdrop-blur-sm bg-white/5'>UI/UX</div>
